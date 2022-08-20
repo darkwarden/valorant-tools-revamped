@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import axios from 'axios';
 import { createContext } from 'react';
-import { APIKeys } from './ApiKey';
 const HenrikDevValorantAPI = require('unofficial-valorant-api');
-const APIKey = APIKeys;
-const VAPI = new HenrikDevValorantAPI(APIKey);
+const VAPI = new HenrikDevValorantAPI();
 
 export const UserContext = createContext(null);
 
